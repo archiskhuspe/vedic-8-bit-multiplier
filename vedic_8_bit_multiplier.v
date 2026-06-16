@@ -89,10 +89,10 @@ input [7:0]a;
 input [7:0]b;
 output [15:0]c;
 
-wire [15:0]q0;	
-wire [15:0]q1;	
-wire [15:0]q2;
-wire [15:0]q3;	
+wire [7:0]q0;
+wire [7:0]q1;
+wire [7:0]q2;
+wire [7:0]q3;
 wire [15:0]c;
 wire [7:0]temp1;
 wire [11:0]temp2;
@@ -102,10 +102,10 @@ wire [7:0]q4;
 wire [11:0]q5;
 wire [11:0]q6;
 
-vedic_4_x_4 z1(a[3:0],b[3:0],q0[15:0]);
-vedic_4_x_4 z2(a[7:4],b[3:0],q1[15:0]);
-vedic_4_x_4 z3(a[3:0],b[7:4],q2[15:0]);
-vedic_4_x_4 z4(a[7:4],b[7:4],q3[15:0]);
+vedic_4_x_4 z1(a[3:0],b[3:0],q0);
+vedic_4_x_4 z2(a[7:4],b[3:0],q1);
+vedic_4_x_4 z3(a[3:0],b[7:4],q2);
+vedic_4_x_4 z4(a[7:4],b[7:4],q3);
 
 assign temp1 ={4'b0,q0[7:4]};
 add_8_bit z5(q1[7:0],temp1,q4);

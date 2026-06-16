@@ -1,0 +1,15 @@
+# Simulation output
+*.vcd
+
+# Xilinx project/synthesis output
+*.xise
+*.bit
+*.ngc
+*.ngd
+*.ncd
+_xmsgs/
+xlnx_auto_0_xdb/
+xst/
+
+# macOS
+.DS_Store
